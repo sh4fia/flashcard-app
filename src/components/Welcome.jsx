@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 
 const Welcome = () => {
 
-  const [wordList, setWorldList] = useState([{ word: '', meaning: '' }]);
+  const [wordList, setWorldList] = useState([{ index: 0, word: '', meaning: '' }]);
 
   const handleWordAdd = () => {
-    setWorldList([...wordList, { word: '', meaning: '' }]);
+    setWorldList([...wordList, { index: wordList.length, word: '', meaning: '' }]);
   }
 
   const handleWordRemove = (index) => {

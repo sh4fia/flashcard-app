@@ -3,6 +3,8 @@ import { useState } from "react"
 
 const Flashcard = ({ flashcard }) => {
 
+  console.log(flashcard);
+
   const [flip, setFlip] = useState(false);
 
   return (
