@@ -9,9 +9,12 @@ const Practice = () => {
 
     return (
         <>
-        <FlashcardList flashcards={data} />
+        <FlashcardList from='practice' flashcards={data} />
             <Link to='/'>
                 <button >go back</button>
+            </Link>
+            <Link to='/test' state={{ fromPractice: {data} }}>
+                <button >test</button>
             </Link>
         </>
     )
